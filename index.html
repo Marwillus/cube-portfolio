@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Cube</title>
+  </head>
+  <body>
+    <div id="bg-left"></div>
+    <div id="bg-right"></div>
+    <!-- Swiper -->
+    <div class="swiper-container swiper-container-v">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" data-name="Home">
+          <div class="intro-wrapper">
+            <div class="intro-inner">
+              <img src="./images/12092_mawillus_logo_KJ-01.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-name="Projects">
+          <div class="swiper-container swiper-container-h">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Project Slide 1</div>
+              <div class="swiper-slide">Projekt Slide 2</div>
+              <div class="swiper-slide">Projekt Slide 3</div>
+              <div class="swiper-slide">Projekt Slide 4</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-name="About">Horizontal Slide 3</div>
+        <div class="swiper-slide" data-name="Contact">Horizontal Slide 4</div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

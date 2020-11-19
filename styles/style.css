@@ -1,0 +1,125 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#bg-left,
+#bg-right {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: -3;
+}
+
+#bg-left {
+  left: 0;
+  width: 50%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(80%, #161616), to(#000000));
+  background: linear-gradient(90deg, #161616 80%, #000000 100%);
+}
+
+#bg-right {
+  left: 33%;
+  width: 67%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#be8116), color-stop(15%, #feab1f), to(#feab1f));
+  background: linear-gradient(0deg, #be8116 0%, #feab1f 15%, #feab1f 100%);
+}
+
+.swiper-container {
+  margin-top: 30px;
+  width: 60rem;
+  height: 40rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-container-v {
+  background: none;
+}
+
+.swiper-pagination {
+  top: 6rem;
+  left: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.swiper-pagination-bullet {
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  color: white;
+  opacity: 1;
+  background: none;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.swiper-pagination-bullet-active:focus,
+.swiper-pagination-bullet:active {
+  outline: none;
+}
+
+.swiper-pagination-bullet-active {
+  border-bottom: rgba(255, 255, 255, 0.527) 1px solid;
+}
+
+.intro-wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: #f3a41d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro-wrapper .intro-inner {
+  height: 90%;
+  width: 90%;
+  background-color: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
