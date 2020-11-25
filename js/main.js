@@ -4,15 +4,14 @@ var swiperH = new Swiper(".swiper-container-h", {
     prevEl: ".swiper-button-prev",
   },
   speed: 800,
-  // loop: true,
   initialSlide: 1,
-  effect: "cube",
+  /* effect: "cube",
   cubeEffect: {
     shadow: false,
     slideShadows: true,
     shadowOffset: 20,
     shadowScale: 0.94,
-  },
+  }, */
 });
 var swiperV = new Swiper(".swiper-container-v", {
   direction: "vertical",
@@ -21,7 +20,12 @@ var swiperV = new Swiper(".swiper-container-v", {
   loop: true,
   speed: 800,
   effect: "cube",
-
+  cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 100,
+    shadowScale: 0.9,
+  },
   //Menubuttons with Text
   pagination: {
     el: ".swiper-pagination",

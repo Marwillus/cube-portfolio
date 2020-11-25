@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap");
+
 html,
 body {
   position: relative;
   height: 100%;
 }
 body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Raleway", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
+  font-weight: 200;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -22,20 +25,30 @@ body {
   left: 0;
   width: 50%;
   // background-color: #161616;
-  background: linear-gradient(90deg, #161616 80%, #000000 100%);
+  background: linear-gradient(0deg, #0a0a0a 0%, #161616 20%);
 }
 #bg-right {
-  left: 33%;
+  left: 40%;
   width: 67%;
   // background-color: #feab1f;
-  background: linear-gradient(0deg, #be8116 0%, #feab1f 15%, #feab1f 100%);
+  background: linear-gradient(0deg, #b87b11 0%, #feab1f 20%);
 }
 
-.swiper-container {
-  margin-top: 30px;
-  width: 60rem;
-  height: 40rem;
+.profil-picture {
+  width: 20%;
 }
+
+/////////////// cube stuff
+#cube {
+  position: absolute;
+  top: 48%;
+  right: 15%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 60%;
+  height: 85%;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -60,8 +73,8 @@ body {
 }
 
 .swiper-pagination {
-  top: 6rem;
-  left: 3rem;
+  top: 15%;
+  left: 5%;
   display: flex;
   flex-direction: column;
 }
@@ -71,7 +84,7 @@ body {
   height: 50px;
   text-align: center;
   line-height: 50px;
-  font-size: 24px;
+  font-size: 1.7rem;
   color: rgb(255, 255, 255);
   opacity: 1;
   background: none;
@@ -79,28 +92,33 @@ body {
   margin-bottom: 2rem;
 }
 
-.swiper-pagination-bullet-active:focus,
+.swiper-pagination-bullet:focus,
 .swiper-pagination-bullet:active {
   outline: none;
 }
 
 .swiper-pagination-bullet-active {
-  border-bottom: rgba(255, 255, 255, 0.527) 1px solid;
+  // text-decoration: underline;
+  font-weight: 400;
 }
 
-.intro-wrapper {
+.bg-outside {
   height: 100%;
   width: 100%;
   background-color: #f3a41d;
   display: flex;
   justify-content: center;
   align-items: center;
-  .intro-inner {
+  .bg-inside {
     height: 90%;
     width: 90%;
     background-color: #131313;
+    color: #f1f1f1;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+}
+.logo {
+  transform: translateZ(10px);
 }
