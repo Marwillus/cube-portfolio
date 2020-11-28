@@ -3,11 +3,8 @@ html,
 body {
   position: relative;
   height: 100%;
-}
-
-body {
   font-family: "Raleway", Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 200;
   margin: 0;
   padding: 0;
@@ -25,15 +22,15 @@ body {
 #bg-left {
   left: 0;
   width: 50%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#000000), color-stop(20%, #161616));
-  background: linear-gradient(0deg, #000000 0%, #161616 20%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#0a0a0a), color-stop(20%, #161616));
+  background: linear-gradient(0deg, #0a0a0a 0%, #161616 20%);
 }
 
 #bg-right {
   left: 40%;
   width: 67%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#be8116), color-stop(20%, #feab1f));
-  background: linear-gradient(0deg, #be8116 0%, #feab1f 20%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#b87b11), color-stop(20%, #feab1f));
+  background: linear-gradient(0deg, #b87b11 0%, #feab1f 20%);
 }
 
 .profil-picture {
@@ -137,5 +134,101 @@ body {
 .logo {
   -webkit-transform: translateZ(10px);
           transform: translateZ(10px);
+}
+
+.form-wrapper {
+  position: relative;
+  width: 80%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-wrapper .form-upper {
+  z-index: 2;
+  position: absolute;
+  left: 5rem;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20rem;
+  background-color: #494949;
+  padding: 1.5rem;
+  -webkit-transform: translateZ(10px);
+          transform: translateZ(10px);
+}
+
+.form-wrapper .form-upper input,
+.form-wrapper .form-upper textarea {
+  margin: 0.5rem;
+  background-color: #49494900;
+  border: 1px #cecece solid;
+  color: #f1f1f1;
+}
+
+.form-wrapper .form-upper input::-webkit-input-placeholder,
+.form-wrapper .form-upper textarea::-webkit-input-placeholder {
+  color: #a5a5a5;
+  padding: 0.5rem;
+}
+
+.form-wrapper .form-upper input:-ms-input-placeholder,
+.form-wrapper .form-upper textarea:-ms-input-placeholder {
+  color: #a5a5a5;
+  padding: 0.5rem;
+}
+
+.form-wrapper .form-upper input::-ms-input-placeholder,
+.form-wrapper .form-upper textarea::-ms-input-placeholder {
+  color: #a5a5a5;
+  padding: 0.5rem;
+}
+
+.form-wrapper .form-upper input::placeholder,
+.form-wrapper .form-upper textarea::placeholder {
+  color: #a5a5a5;
+  padding: 0.5rem;
+}
+
+.form-wrapper .form-upper input {
+  height: 2rem;
+}
+
+.form-wrapper .form-under {
+  z-index: 1;
+  width: 100%;
+  height: 25rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-color: #2c2c2c;
+  color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transform: translateZ(10px);
+          transform: translateZ(10px);
+}
+
+.form-wrapper .form-under h2 {
+  font-weight: 200;
+  padding-right: 3rem;
+  width: 9rem;
+  text-align: start;
 }
 /*# sourceMappingURL=style.css.map */

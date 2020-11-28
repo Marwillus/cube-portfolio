@@ -10,12 +10,17 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Cube</title>
   </head>
+
   <body>
     <div id="bg-left"></div>
     <div id="bg-right"></div>
+    
     <!-- Swiper -->
     <div class="swiper-container swiper-container-v" id="cube">
       <div class="swiper-wrapper">
+
+
+
         <div class="swiper-slide bg-outside" data-name="Home">
           <div class="bg-inside">
             <img
@@ -27,6 +32,16 @@
         </div>
         <div class="swiper-slide bg-outside" data-name="About">
           <div class="bg-inside">
+            <div class="about-wrapper">
+              <div class="about-under">
+                <h1 class="title">Hello there, I'm Marcus</h1>
+              </div>
+              <div class="about-over">
+                <p>I'm a guy from berlin who loves being a part of the journey from an idea being born to becoming a real thing.
+                  This is usually a complex process including evaluating concepts, planning, designing and finally crafting it.
+                  Over the time I learned a lot of skills during my various jobs I've done and I'm still curious what to learn next, because it's an exiting time to live in when it comes to technology.</p>
+              </div>
+            </div>
             <div class="about-up">
               <img
                 src="./images/IMG_7958 (3).JPG"
@@ -50,8 +65,38 @@
           </div>
         </div>
         <div class="swiper-slide bg-outside" data-name="Contact">
-          <div class="bg-inside">Contact Form</div>
+          <div class="bg-inside">
+            <div class="form-wrapper">
+              <form class="form-over">
+                <input
+                  type="text"
+                  name="name"
+                  id="input-name"
+                  placeholder="name"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="input-email"
+                  placeholder="email"
+                />
+                <textarea
+                  name="message"
+                  id="input-message"
+                  placeholder="your message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <input type="submit" value="abfahrt" />
+              </form>
+              <div class="form-under">
+                <h2>Send me a message</h2>
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
+        
       </div>
     </div>
     <div class="swiper-pagination"></div>

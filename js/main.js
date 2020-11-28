@@ -5,8 +5,9 @@ var swiperH = new Swiper(".swiper-container-h", {
   },
   speed: 800,
   initialSlide: 1,
-  /* effect: "cube",
-  cubeEffect: {
+  // effect: "cube",
+  // effect: "flip",
+  /*   cubeEffect: {
     shadow: false,
     slideShadows: true,
     shadowOffset: 20,
