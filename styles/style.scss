@@ -192,20 +192,33 @@ body {
     }
   }
 }
-
-/* .pic-physical,
-.pic-digital {
+.projects-bg {
+  z-index: 1;
+  width: 70%;
+  height: 60%;
+  position: absolute;
+  top: 10%;
+  background-color: #1b1b1b;
+}
+.physical,
+.digital {
+  z-index: 3;
   width: 40%;
   height: 60%;
-  background-size: cover;
-  margin: 20px;
+  padding: 3%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  img::after {
+    content: "Physical";
+    position: absolute;
+  }
+  h3 {
+    text-align: center;
+  }
 }
-.pic-digital {
-  background-image: url(../images/pexels-photo-669996.jpg);
-}
-.pic-physical {
-  background-image: url(../images/IMG_7486.JPG);
-} */
 
 .form-wrapper {
   position: relative;
