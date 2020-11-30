@@ -32,10 +32,6 @@ body {
   background: linear-gradient(0deg, #b87b11 0%, #feab1f 20%);
 }
 
-.profil-picture {
-  width: 20%;
-}
-
 /////////////// cube stuff
 #cube {
   position: absolute;
@@ -48,7 +44,6 @@ body {
 }
 
 .swiper-slide {
-  text-align: center;
   font-size: 18px;
   // background: #888;
   /* Center slide text vertically */
@@ -80,7 +75,7 @@ body {
 .swiper-pagination-bullet {
   width: 180px;
   height: 50px;
-  text-align: center;
+  text-align: right;
   line-height: 50px;
   font-size: 1.7rem;
   color: rgb(255, 255, 255);
@@ -101,13 +96,17 @@ body {
 }
 
 .bg-outside {
+  z-index: -1;
   height: 100%;
   width: 100%;
   background-color: #f3a41d;
+  // border: #f3a41d 10px solid;
   display: flex;
   justify-content: center;
   align-items: center;
   .bg-inside {
+    // transform: translateZ(-10px);
+    z-index: 1;
     height: 90%;
     width: 90%;
     background-color: #131313;
@@ -118,28 +117,115 @@ body {
   }
 }
 
+// .swiper-button-next,
+// .swiper-button-prev {
+//   height: 100%;
+//   width: 45%;
+//   top: 15px;
+//   // background-color: #f1f1f177;
+// }
+
 //////////////////oncube stuff
 
 .logo {
   transform: translateZ(10px);
 }
 
+.highlight {
+  color: #d63333;
+}
+
+.about-wrapper {
+  position: relative;
+  width: 90%;
+  height: 90%;
+
+  .profil-picture {
+    margin: 10% 0 0 10%;
+    width: 30%;
+  }
+  .about-under {
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 10%;
+    // background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+    background-color: #262626;
+    .title {
+      font-family: "Open Sans", "Helvetica Neue", sans-serif;
+      position: relative;
+      top: 17%;
+      font-size: 1.8rem;
+      line-height: 1.5rem;
+      h2 {
+        position: relative;
+        left: -20%;
+        font-weight: 100;
+      }
+      h1 {
+        padding: 0 2rem 0 2rem;
+      }
+    }
+  }
+  .about-over {
+    z-index: 2;
+    position: relative;
+    top: -10px;
+    transform: translateZ(10px);
+    // background-image: url("https://www.transparenttextures.com/patterns/light-aluminium.png");
+    background-color: #363636;
+    display: flex;
+    justify-content: space-between;
+    p {
+      width: 30%;
+      padding: 30px;
+      border-right: #fbfbfb 1px solid;
+    }
+    .about-pic {
+      width: 200px;
+      min-height: 200px;
+      background-image: url(../images/leuchte.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+/* .pic-physical,
+.pic-digital {
+  width: 40%;
+  height: 60%;
+  background-size: cover;
+  margin: 20px;
+}
+.pic-digital {
+  background-image: url(../images/pexels-photo-669996.jpg);
+}
+.pic-physical {
+  background-image: url(../images/IMG_7486.JPG);
+} */
+
 .form-wrapper {
   position: relative;
   width: 80%;
   height: 90%;
   display: flex;
+  background-color: #161616;
   .form-over {
     z-index: 2;
     position: absolute;
-    left: 5rem;
+    width: 50%;
+    left: 10%;
     top: 0;
     bottom: 0;
+    background-color: #363636;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 20rem;
-    background-color: #494949;
+
     padding: 1.5rem;
     transform: translateZ(10px);
     // box-shadow: 5px 5px 20px #0a0a0a71;
@@ -157,13 +243,16 @@ body {
     input {
       height: 2rem;
     }
+    #send-btn {
+      border-top: #d63333 solid 3px;
+    }
   }
   .form-under {
     z-index: 1;
     width: 100%;
-    height: 25rem;
+    height: 70%;
     align-self: center;
-    background-color: #2c2c2c;
+    background-color: #262626;
     color: #f1f1f1;
     display: flex;
     align-items: center;
@@ -176,6 +265,10 @@ body {
       padding-right: 3rem;
       width: 9rem;
       text-align: start;
+      span {
+        color: #d63333;
+        font-weight: bold;
+      }
     }
   }
 }
