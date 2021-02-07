@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap");
+@font-face {
+  font-family: "CeraMedium";
+  src: url("../fonts/CeraMedium.otf") format("opentype");
+}
+@font-face {
+  font-family: "CeraLight";
+  src: url("../fonts/CeraLight.otf") format("opentype");
+}
+$cubeWidth: 1000px;
+$cubeHeight: 700px;
 
 html,
 body {
   position: relative;
+  width: 100%;
   height: 100%;
   font-family: "Raleway", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -14,19 +25,19 @@ body {
 
 #bg-left,
 #bg-right {
-  position: fixed;
+  position: absolute;
   top: 0;
   height: 100%;
   z-index: -3;
 }
 #bg-left {
   left: 0;
-  width: 50%;
+  width: 40%;
   // background-color: #161616;
   background: linear-gradient(0deg, #0a0a0a 0%, #161616 20%);
 }
 #bg-right {
-  left: 40%;
+  right: 0;
   width: 67%;
   // background-color: #feab1f;
   background: linear-gradient(0deg, #b87b11 0%, #feab1f 20%);
@@ -39,12 +50,11 @@ body {
   right: 15%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 60%;
-  height: 85%;
+  width: $cubeWidth;
+  height: $cubeHeight;
 }
 
 .swiper-slide {
-  font-size: 18px;
   // background: #888;
   /* Center slide text vertically */
   display: -webkit-box;
@@ -59,10 +69,6 @@ body {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-}
-
-.swiper-container-v {
-  background: none;
 }
 
 .swiper-pagination {
@@ -99,37 +105,46 @@ body {
   z-index: -1;
   height: 100%;
   width: 100%;
-  background-color: #f3a41d;
+  // background-color: #f3a41d;
   // border: #f3a41d 10px solid;
   display: flex;
   justify-content: center;
   align-items: center;
-  .bg-inside {
-    // transform: translateZ(-10px);
-    z-index: 1;
-    height: 90%;
-    width: 90%;
-    background-color: #131313;
-    color: #f1f1f1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+}
+.bg-inside {
+  overflow: hidden;
+  z-index: 1;
+  height: calc(#{$cubeHeight} - 80px);
+  width: calc(#{$cubeWidth} - 80px);
+  background-color: #151515;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-color {
+  background-color: #f3a41d;
 }
 
-// .swiper-button-next,
-// .swiper-button-prev {
-//   height: 100%;
-//   width: 45%;
-//   top: 15px;
-//   // background-color: #f1f1f177;
-// }
+.swiper-button-next,
+.swiper-button-prev {
+  height: 40px;
+  width: 30px;
+  top: 50%;
+  color: #e6e6e6b4;
+  padding: 12px;
+  // border: 1px solid #f1f1f1c4;
+  border-radius: 30px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transition: 0.5s;
+  background-color: #f1f1f1b7;
+  color: #0a0a0a;
+}
 
 //////////////////oncube stuff
-
-.logo {
-  transform: translateZ(10px);
-}
 
 .highlight {
   color: #d63333;
@@ -137,89 +152,72 @@ body {
 
 .about-wrapper {
   position: relative;
-  width: 90%;
-  height: 90%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  transform: translateX(-200px);
 
-  .profil-picture {
-    margin: 10% 0 0 10%;
-    width: 30%;
-  }
-  .about-under {
-    z-index: 1;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    right: 10%;
-    // background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
-    background-color: #262626;
-    .title {
-      font-family: "Open Sans", "Helvetica Neue", sans-serif;
-      position: relative;
-      top: 17%;
-      font-size: 1.8rem;
-      line-height: 1.5rem;
-      h2 {
-        position: relative;
-        left: -20%;
-        font-weight: 100;
-      }
-      h1 {
-        padding: 0 2rem 0 2rem;
-      }
-    }
-  }
-  .about-over {
-    z-index: 2;
-    position: relative;
-    top: -10px;
-    transform: translateZ(10px);
-    // background-image: url("https://www.transparenttextures.com/patterns/light-aluminium.png");
-    background-color: #363636;
-    display: flex;
-    justify-content: space-between;
-    p {
-      width: 30%;
-      padding: 30px;
-      border-right: #fbfbfb 1px solid;
-    }
-    .about-pic {
-      width: 200px;
-      min-height: 200px;
-      background-image: url(../images/leuchte.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  }
-}
-.projects-bg {
-  z-index: 1;
-  width: 70%;
-  height: 60%;
-  position: absolute;
-  top: 10%;
-  background-color: #1b1b1b;
-}
-.physical,
-.digital {
-  z-index: 3;
-  width: 40%;
-  height: 60%;
-  padding: 3%;
   img {
-    width: 100%;
     height: 100%;
-    object-fit: cover;
+    // transform: translateX(-48%);
   }
-  img::after {
-    content: "Physical";
-    position: absolute;
-  }
-  h3 {
-    text-align: center;
+  .about-info {
+    width: 450px;
+    padding: 80px 0 0 20px;
+    // transform: translateZ(50px);
+    height: 2px;
+    h2 {
+      font-size: 2rem;
+      letter-spacing: 10px;
+    }
+    h1 {
+      font-family: "CeraLight";
+      font-size: 3.8rem;
+      letter-spacing: 5px;
+      color: #dd961c;
+      transform: translate(0rem, -2rem);
+    }
+    p {
+      font-size: 1.4rem;
+    }
   }
 }
+.project-intro {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
+  p {
+    width: 50%;
+    padding: 5rem;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+  }
+
+  .project-intro-pic {
+    height: 100%;
+    width: 50%;
+    background-image: url(../images/project-intro.JPG);
+    background-size: cover;
+  }
+}
+.moebel-1 {
+  background-image: url(../images/projects/20170718_190553.jpg);
+  background-size: cover;
+}
+.moebel-2 {
+  background-image: url(../images/projects/_MG_9504.jpg);
+  background-size: cover;
+}
+.moebel-3 {
+  background-image: url(../images/projects/bett.jpg);
+  background-size: cover;
+}
+
+///////////////////form/////////////
 .form-wrapper {
   position: relative;
   width: 80%;
@@ -240,7 +238,6 @@ body {
     justify-content: center;
 
     padding: 1.5rem;
-    transform: translateZ(10px);
     // box-shadow: 5px 5px 20px #0a0a0a71;
     input,
     textarea {
@@ -270,7 +267,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    transform: translateZ(10px);
     h2 {
       // align-self: center;
       // float: right;
@@ -282,6 +278,28 @@ body {
         color: #d63333;
         font-weight: bold;
       }
+    }
+  }
+}
+
+.social-links {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  display: block;
+  padding: 1rem;
+  a {
+    display: block;
+    text-align: right;
+
+    .fa {
+      color: #e6e6e69a;
+      font-size: 2.5rem;
+      padding: 0.5rem;
+    }
+    .fa:hover {
+      color: #f1f1f1;
+      transition: 0.3s;
     }
   }
 }

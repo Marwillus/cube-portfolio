@@ -1,7 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap");
+@font-face {
+  font-family: "CeraMedium";
+  src: url("../fonts/CeraMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CeraLight";
+  src: url("../fonts/CeraLight.otf") format("opentype");
+}
+
 html,
 body {
   position: relative;
+  width: 100%;
   height: 100%;
   font-family: "Raleway", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -13,7 +24,7 @@ body {
 
 #bg-left,
 #bg-right {
-  position: fixed;
+  position: absolute;
   top: 0;
   height: 100%;
   z-index: -3;
@@ -21,13 +32,13 @@ body {
 
 #bg-left {
   left: 0;
-  width: 50%;
+  width: 40%;
   background: -webkit-gradient(linear, left bottom, left top, from(#0a0a0a), color-stop(20%, #161616));
   background: linear-gradient(0deg, #0a0a0a 0%, #161616 20%);
 }
 
 #bg-right {
-  left: 40%;
+  right: 0;
   width: 67%;
   background: -webkit-gradient(linear, left bottom, left top, from(#b87b11), color-stop(20%, #feab1f));
   background: linear-gradient(0deg, #b87b11 0%, #feab1f 20%);
@@ -39,12 +50,11 @@ body {
   right: 15%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 60%;
-  height: 85%;
+  width: 1000px;
+  height: 700px;
 }
 
 .swiper-slide {
-  font-size: 18px;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,10 +65,6 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.swiper-container-v {
-  background: none;
 }
 
 .swiper-pagination {
@@ -99,7 +105,6 @@ body {
   z-index: -1;
   height: 100%;
   width: 100%;
-  background-color: #f3a41d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,11 +116,12 @@ body {
           align-items: center;
 }
 
-.bg-outside .bg-inside {
+.bg-inside {
+  overflow: hidden;
   z-index: 1;
-  height: 90%;
-  width: 90%;
-  background-color: #131313;
+  height: calc(700px - 80px);
+  width: calc(1000px - 80px);
+  background-color: #151515;
   color: #f1f1f1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,9 +134,26 @@ body {
           align-items: center;
 }
 
-.logo {
-  -webkit-transform: translateZ(10px);
-          transform: translateZ(10px);
+.bg-color {
+  background-color: #f3a41d;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  height: 40px;
+  width: 30px;
+  top: 50%;
+  color: #e6e6e6b4;
+  padding: 12px;
+  border-radius: 30px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #f1f1f1b7;
+  color: #0a0a0a;
 }
 
 .highlight {
@@ -139,106 +162,90 @@ body {
 
 .about-wrapper {
   position: relative;
-  width: 90%;
-  height: 90%;
-}
-
-.about-wrapper .profil-picture {
-  margin: 10% 0 0 10%;
-  width: 30%;
-}
-
-.about-wrapper .about-under {
-  z-index: 1;
-  position: absolute;
   height: 100%;
-  top: 0;
-  right: 10%;
-  background-color: #262626;
-}
-
-.about-wrapper .about-under .title {
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  position: relative;
-  top: 17%;
-  font-size: 1.8rem;
-  line-height: 1.5rem;
-}
-
-.about-wrapper .about-under .title h2 {
-  position: relative;
-  left: -20%;
-  font-weight: 100;
-}
-
-.about-wrapper .about-under .title h1 {
-  padding: 0 2rem 0 2rem;
-}
-
-.about-wrapper .about-over {
-  z-index: 2;
-  position: relative;
-  top: -10px;
-  -webkit-transform: translateZ(10px);
-          transform: translateZ(10px);
-  background-color: #363636;
+  padding: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
 }
 
-.about-wrapper .about-over p {
-  width: 30%;
-  padding: 30px;
-  border-right: #fbfbfb 1px solid;
-}
-
-.about-wrapper .about-over .about-pic {
-  width: 200px;
-  min-height: 200px;
-  background-image: url(../images/leuchte.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.projects-bg {
-  z-index: 1;
-  width: 70%;
-  height: 60%;
-  position: absolute;
-  top: 10%;
-  background-color: #1b1b1b;
-}
-
-.physical,
-.digital {
-  z-index: 3;
-  width: 40%;
-  height: 60%;
-  padding: 3%;
-}
-
-.physical img,
-.digital img {
-  width: 100%;
+.about-wrapper img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
-.physical img::after,
-.digital img::after {
-  content: "Physical";
-  position: absolute;
+.about-wrapper .about-info {
+  width: 450px;
+  padding: 80px 0 0 20px;
+  height: 2px;
 }
 
-.physical h3,
-.digital h3 {
-  text-align: center;
+.about-wrapper .about-info h2 {
+  font-size: 2rem;
+  letter-spacing: 10px;
+}
+
+.about-wrapper .about-info h1 {
+  font-family: "CeraLight";
+  font-size: 3.8rem;
+  letter-spacing: 5px;
+  color: #dd961c;
+  -webkit-transform: translate(0rem, -2rem);
+          transform: translate(0rem, -2rem);
+}
+
+.about-wrapper .about-info p {
+  font-size: 1.4rem;
+}
+
+.project-intro {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project-intro p {
+  width: 50%;
+  padding: 5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.4rem;
+}
+
+.project-intro .project-intro-pic {
+  height: 100%;
+  width: 50%;
+  background-image: url(../images/project-intro.JPG);
+  background-size: cover;
+}
+
+.moebel-1 {
+  background-image: url(../images/projects/20170718_190553.jpg);
+  background-size: cover;
+}
+
+.moebel-2 {
+  background-image: url(../images/projects/_MG_9504.jpg);
+  background-size: cover;
+}
+
+.moebel-3 {
+  background-image: url(../images/projects/bett.jpg);
+  background-size: cover;
 }
 
 .form-wrapper {
@@ -270,8 +277,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 1.5rem;
-  -webkit-transform: translateZ(10px);
-          transform: translateZ(10px);
 }
 
 .form-wrapper .form-over input,
@@ -331,8 +336,6 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-transform: translateZ(10px);
-          transform: translateZ(10px);
 }
 
 .form-wrapper .form-under h2 {
@@ -345,5 +348,30 @@ body {
 .form-wrapper .form-under h2 span {
   color: #d63333;
   font-weight: bold;
+}
+
+.social-links {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  display: block;
+  padding: 1rem;
+}
+
+.social-links a {
+  display: block;
+  text-align: right;
+}
+
+.social-links a .fa {
+  color: #e6e6e69a;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+}
+
+.social-links a .fa:hover {
+  color: #f1f1f1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=style.css.map */
