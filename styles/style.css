@@ -47,11 +47,11 @@ body {
 #cube {
   position: absolute;
   top: 48%;
-  right: 15%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 1000px;
-  height: 700px;
+  left: 55%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 1300px;
+  height: 800px;
 }
 
 .swiper-slide {
@@ -69,7 +69,6 @@ body {
 
 .swiper-pagination {
   top: 15%;
-  left: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,8 +118,8 @@ body {
 .bg-inside {
   overflow: hidden;
   z-index: 1;
-  height: calc(700px - 80px);
-  width: calc(1000px - 80px);
+  height: calc(800px - 80px);
+  width: calc(1300px - 80px);
   background-color: #151515;
   color: #f1f1f1;
   display: -webkit-box;
@@ -265,7 +264,8 @@ body {
   left: 10%;
   top: 0;
   bottom: 0;
-  background-color: #363636;
+  background-color: #1b1b1b;
+  border: 1px solid #f4f4f4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,46 +277,66 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.form-wrapper .form-over label {
+  padding: 1rem;
 }
 
 .form-wrapper .form-over input,
 .form-wrapper .form-over textarea {
   margin: 0.5rem;
-  background-color: #49494900;
-  border: 1px #cecece solid;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px #f4f4f4 solid;
+  border-top: 1px #f4f4f4 solid;
   color: #f1f1f1;
+}
+
+.form-wrapper .form-over input:focus,
+.form-wrapper .form-over textarea:focus {
+  border: none;
 }
 
 .form-wrapper .form-over input::-webkit-input-placeholder,
 .form-wrapper .form-over textarea::-webkit-input-placeholder {
   color: #a5a5a5;
   padding: 0.5rem;
+  font-family: monospace;
 }
 
 .form-wrapper .form-over input:-ms-input-placeholder,
 .form-wrapper .form-over textarea:-ms-input-placeholder {
   color: #a5a5a5;
   padding: 0.5rem;
+  font-family: monospace;
 }
 
 .form-wrapper .form-over input::-ms-input-placeholder,
 .form-wrapper .form-over textarea::-ms-input-placeholder {
   color: #a5a5a5;
   padding: 0.5rem;
+  font-family: monospace;
 }
 
 .form-wrapper .form-over input::placeholder,
 .form-wrapper .form-over textarea::placeholder {
   color: #a5a5a5;
   padding: 0.5rem;
+  font-family: monospace;
 }
 
 .form-wrapper .form-over input {
-  height: 2rem;
+  line-height: 2rem;
 }
 
 .form-wrapper .form-over #send-btn {
-  border-top: #d63333 solid 3px;
+  margin-top: 1rem;
+  border: none;
+  background-color: #813232;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .form-wrapper .form-under {
@@ -325,7 +345,7 @@ body {
   height: 70%;
   -ms-flex-item-align: center;
       align-self: center;
-  background-color: #262626;
+  border: 1px solid #f4f4f4;
   color: #f1f1f1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,11 +363,6 @@ body {
   padding-right: 3rem;
   width: 9rem;
   text-align: start;
-}
-
-.form-wrapper .form-under h2 span {
-  color: #d63333;
-  font-weight: bold;
 }
 
 .social-links {
@@ -373,5 +388,83 @@ body {
   color: #f1f1f1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 1800px) {
+  #cube {
+    height: 700px;
+    width: 1100px;
+  }
+  .bg-inside {
+    height: calc(700px - 80px);
+    width: calc(1100px - 80px);
+  }
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 10px;
+  }
+  #cube {
+    height: 700px;
+    width: 950px;
+    left: 50%;
+  }
+  .bg-inside {
+    height: calc(700px - 80px);
+    width: calc(950px - 80px);
+  }
+  .swiper-pagination,
+  .social-links {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  #cube {
+    height: 700px;
+    width: 750px;
+    left: 50%;
+  }
+  .bg-inside {
+    height: calc(700px - 80px);
+    width: calc(750px - 80px);
+  }
+  .swiper-pagination,
+  .social-links {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #cube {
+    height: 700px;
+    width: 550px;
+    left: 50%;
+  }
+  .bg-inside {
+    height: calc(700px - 80px);
+    width: calc(550px - 80px);
+  }
+  .swiper-pagination,
+  .social-links {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  #cube {
+    height: 700px;
+    width: 480px;
+    left: 50%;
+  }
+  .bg-inside {
+    height: calc(700px - 80px);
+    width: calc(480px - 80px);
+  }
+  .swiper-pagination,
+  .social-links {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

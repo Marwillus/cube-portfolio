@@ -100,7 +100,19 @@
         <div class="swiper-slide bg-outside bg-color" data-name="Contact">
           <div class="bg-inside">
             <div class="form-wrapper">
-              <form class="form-over">
+              <form
+                class="form-over"
+                action="https://formspree.io/f/meqpvbay"
+                method="POST"
+              >
+                <label for="message">Dear Marcus,</label>
+                <textarea
+                  name="message"
+                  id="input-message"
+                  placeholder="your message"
+                  resize="none"
+                  rows="12"
+                ></textarea>
                 <input
                   type="text"
                   name="name"
@@ -113,17 +125,10 @@
                   id="input-email"
                   placeholder="email"
                 />
-                <textarea
-                  name="message"
-                  id="input-message"
-                  placeholder="your message"
-                  cols="30"
-                  rows="10"
-                ></textarea>
-                <input type="submit" value="abfahrt" id="send-btn" />
+                <input type="submit" value="send" id="send-btn" />
               </form>
               <div class="form-under">
-                <h2>Send me a message<span class="highlight">_</span></h2>
+                <h2>send me a message</h2>
               </div>
             </div>
           </div>
