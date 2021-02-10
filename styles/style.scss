@@ -153,20 +153,23 @@ body {
 .about-wrapper {
   position: relative;
   height: 100%;
-  padding: 40px;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  transform: translateX(-200px);
 
   img {
+    z-index: -1;
     height: 100%;
-    // transform: translateX(-48%);
+    position: absolute;
+    transform: translateX(-45%);
   }
   .about-info {
     width: 450px;
-    padding: 80px 0 0 20px;
-    // transform: translateZ(50px);
-    height: 2px;
+    margin: auto;
+    align-self: center;
+    transform: translateX(20%);
+    background-color: #151515a4;
+    padding: 3rem;
+    border-radius: 2rem;
     h2 {
       font-size: 2rem;
       letter-spacing: 10px;
@@ -188,32 +191,35 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
 
-  p {
-    width: 50%;
-    padding: 5rem;
-    box-sizing: border-box;
+  .project-intro-info {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
     font-size: 1.4rem;
   }
-
   .project-intro-pic {
-    height: 100%;
     width: 50%;
-    background-image: url(../images/project-intro.JPG);
-    background-size: cover;
+    img {
+      max-height: 130%;
+
+      object-fit: cover;
+    }
   }
 }
+
 .moebel-1 {
-  background-image: url(../images/projects/20170718_190553.jpg);
+  background-image: url(../images/projects/img1.jpg);
   background-size: cover;
 }
 .moebel-2 {
-  background-image: url(../images/projects/_MG_9504.jpg);
+  background-image: url(../images/projects/img2.jpg);
   background-size: cover;
 }
 .moebel-3 {
-  background-image: url(../images/projects/bett.jpg);
+  background-image: url(../images/projects/img3.jpg);
   background-size: cover;
 }
 
@@ -248,7 +254,7 @@ body {
       background-color: transparent;
       border: none;
       border-bottom: 1px $formBorder solid;
-      border-top: 1px $formBorder solid;
+      border-top: 1px #262626 solid;
       color: #f1f1f1;
       &:focus {
         border: none;
@@ -273,10 +279,10 @@ body {
   .form-under {
     z-index: 1;
     width: 100%;
-    height: 70%;
+    height: 80%;
     align-self: center;
     border: 1px solid $formBorder;
-    // background-color: #262626;
+    background-color: #262626;
     color: #f1f1f1;
     display: flex;
     align-items: center;
@@ -328,7 +334,7 @@ body {
 
 @media (max-width: 1400px) {
   html {
-    font-size: 10px;
+    font-size: 14px;
   }
   #cube {
     height: 700px;
@@ -366,9 +372,12 @@ body {
     width: 550px;
     left: 50%;
   }
+  .logo {
+    width: 80%;
+  }
   .bg-inside {
-    height: calc(700px - 80px);
-    width: calc(550px - 80px);
+    height: calc(700px - 60px);
+    width: calc(550px - 60px);
   }
   .swiper-pagination,
   .social-links {
@@ -377,13 +386,16 @@ body {
 }
 @media (max-width: 576px) {
   #cube {
-    height: 700px;
-    width: 480px;
+    height: 600px;
+    width: 440px;
     left: 50%;
   }
+  .logo {
+    width: 80%;
+  }
   .bg-inside {
-    height: calc(700px - 80px);
-    width: calc(480px - 80px);
+    height: calc(600px - 50px);
+    width: calc(440px - 50px);
   }
   .swiper-pagination,
   .social-links {

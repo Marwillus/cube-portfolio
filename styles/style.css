@@ -162,26 +162,31 @@ body {
 .about-wrapper {
   position: relative;
   height: 100%;
-  padding: 40px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-transform: translateX(-200px);
-          transform: translateX(-200px);
 }
 
 .about-wrapper img {
+  z-index: -1;
   height: 100%;
+  position: absolute;
+  -webkit-transform: translateX(-45%);
+          transform: translateX(-45%);
 }
 
 .about-wrapper .about-info {
   width: 450px;
-  padding: 80px 0 0 20px;
-  height: 2px;
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+  background-color: #151515a4;
+  padding: 3rem;
+  border-radius: 2rem;
 }
 
 .about-wrapper .about-info h2 {
@@ -212,38 +217,45 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.project-intro .project-intro-info {
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.project-intro p {
-  width: 50%;
-  padding: 5rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font-size: 1.4rem;
 }
 
 .project-intro .project-intro-pic {
-  height: 100%;
   width: 50%;
-  background-image: url(../images/project-intro.JPG);
-  background-size: cover;
+}
+
+.project-intro .project-intro-pic img {
+  max-height: 130%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .moebel-1 {
-  background-image: url(../images/projects/20170718_190553.jpg);
+  background-image: url(../images/projects/img1.jpg);
   background-size: cover;
 }
 
 .moebel-2 {
-  background-image: url(../images/projects/_MG_9504.jpg);
+  background-image: url(../images/projects/img2.jpg);
   background-size: cover;
 }
 
 .moebel-3 {
-  background-image: url(../images/projects/bett.jpg);
+  background-image: url(../images/projects/img3.jpg);
   background-size: cover;
 }
 
@@ -290,7 +302,7 @@ body {
   background-color: transparent;
   border: none;
   border-bottom: 1px #f4f4f4 solid;
-  border-top: 1px #f4f4f4 solid;
+  border-top: 1px #262626 solid;
   color: #f1f1f1;
 }
 
@@ -342,10 +354,11 @@ body {
 .form-wrapper .form-under {
   z-index: 1;
   width: 100%;
-  height: 70%;
+  height: 80%;
   -ms-flex-item-align: center;
       align-self: center;
   border: 1px solid #f4f4f4;
+  background-color: #262626;
   color: #f1f1f1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -403,7 +416,7 @@ body {
 
 @media (max-width: 1400px) {
   html {
-    font-size: 10px;
+    font-size: 14px;
   }
   #cube {
     height: 700px;
@@ -442,9 +455,12 @@ body {
     width: 550px;
     left: 50%;
   }
+  .logo {
+    width: 80%;
+  }
   .bg-inside {
-    height: calc(700px - 80px);
-    width: calc(550px - 80px);
+    height: calc(700px - 60px);
+    width: calc(550px - 60px);
   }
   .swiper-pagination,
   .social-links {
@@ -454,13 +470,16 @@ body {
 
 @media (max-width: 576px) {
   #cube {
-    height: 700px;
-    width: 480px;
+    height: 600px;
+    width: 440px;
     left: 50%;
   }
+  .logo {
+    width: 80%;
+  }
   .bg-inside {
-    height: calc(700px - 80px);
-    width: calc(480px - 80px);
+    height: calc(600px - 50px);
+    width: calc(440px - 50px);
   }
   .swiper-pagination,
   .social-links {

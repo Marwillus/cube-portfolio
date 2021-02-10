@@ -1,10 +1,11 @@
 var swiperV = new Swiper(".swiper-container-v", {
-  initialSlide: 3,
+  initialSlide: 2,
   direction: "vertical",
   mousewheel: true,
   nested: true,
   loop: true,
-  speed: 800,
+  speed: 500,
+  threshold: 5,
   effect: "cube",
   cubeEffect: {
     shadow: true,
@@ -24,7 +25,9 @@ var swiperV = new Swiper(".swiper-container-v", {
 });
 
 var swiperH = new Swiper(".swiper-container-h", {
+  speed: 500,
   initialSlide: 1,
+  threshold: 3,
   effect: "cube",
   cubeEffect: {
     shadow: false,
@@ -36,4 +39,4 @@ var swiperH = new Swiper(".swiper-container-h", {
   },
 });
 
-console.log(swiperV.activeIndex);
+// console.log(swiperV.activeIndex);
