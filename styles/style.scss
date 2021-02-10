@@ -202,11 +202,8 @@ body {
   }
   .project-intro-pic {
     width: 50%;
-    img {
-      max-height: 130%;
-
-      object-fit: cover;
-    }
+    background-image: url(../images/project-intro.JPG);
+    background-size: cover;
   }
 }
 
