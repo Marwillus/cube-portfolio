@@ -193,6 +193,7 @@ body {
   flex-direction: row;
 
   .project-intro-info {
+    box-sizing: border-box;
     width: 50%;
     padding: 4rem;
     display: flex;

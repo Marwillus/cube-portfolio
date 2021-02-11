@@ -220,6 +220,8 @@ body {
 }
 
 .project-intro .project-intro-info {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 50%;
   padding: 4rem;
   display: -webkit-box;
