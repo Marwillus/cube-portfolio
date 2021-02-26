@@ -204,7 +204,11 @@ body {
     flex-direction: column;
     justify-content: center;
     // align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+
+    i {
+      color: #a5a5a5;
+    }
   }
   .project-intro-pic {
     height: 100%;
@@ -246,8 +250,7 @@ body {
     grid-row: 3/5;
   }
   .info {
-    background-color: #1f1f1f;
-    padding: 20px;
+    padding: 40px;
   }
 }
 
