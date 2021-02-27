@@ -187,9 +187,8 @@ body {
       align-self: center;
   -webkit-transform: translateX(20%);
           transform: translateX(20%);
-  background-color: #151515a4;
+  background-color: #151515b6;
   padding: 3rem;
-  border-radius: 2rem;
 }
 
 .about-wrapper .about-info h2 {
@@ -523,12 +522,16 @@ body {
     height: 100%;
     -webkit-transform: translateX(0px) !important;
             transform: translateX(0px) !important;
-    padding: 2rem !important;
+    padding: 0 2rem 0 2rem !important;
   }
   .about-info h2 {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
     letter-spacing: 4px !important;
-    line-height: 2rem;
+    line-height: 2.6rem;
+    color: #c5c5c5;
+  }
+  .about-info p {
+    font-size: 1.3rem !important;
   }
   .project-intro {
     overflow: hidden;
@@ -575,6 +578,12 @@ body {
     -ms-grid-row: 4;
     -ms-grid-row-span: 2;
     grid-row: 4/6;
+  }
+  .grid-wrapper .info {
+    padding: 0 10px 0 10px !important;
+  }
+  .grid-wrapper .info p {
+    font-size: 0.8rem;
   }
   .form-wrapper .form-over {
     left: 0;
