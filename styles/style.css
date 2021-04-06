@@ -135,7 +135,7 @@ body {
 
 .bg-color {
   background-color: #f3a41d;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+  background-image: url("/images/black-paper.png");
 }
 
 .swiper-button-next,
@@ -199,14 +199,15 @@ body {
 }
 
 .about-wrapper .about-info h1 {
-  font-family: "CeraLight";
+  font-family: "CeraMedium";
   font-size: 3.8rem;
   letter-spacing: 5px;
   color: #dd791c;
 }
 
 .about-wrapper .about-info p {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
 }
 
 .project-intro {
@@ -236,7 +237,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .project-intro .project-intro-info i {

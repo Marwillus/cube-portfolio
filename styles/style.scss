@@ -125,7 +125,7 @@ body {
 .bg-color {
   background-color: #f3a41d;
 
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+  background-image: url("/images/black-paper.png");
 }
 
 .swiper-button-next,
@@ -178,13 +178,15 @@ body {
       transform: translate(0rem, 2rem);
     }
     h1 {
-      font-family: "CeraLight";
+      font-family: "CeraMedium";
       font-size: 3.8rem;
       letter-spacing: 5px;
       color: #dd791c;
     }
+
     p {
-      font-size: 1.4rem;
+      font-size: 1.1rem;
+      line-height: 1.3rem;
     }
   }
 }
@@ -204,7 +206,7 @@ body {
     flex-direction: column;
     justify-content: center;
     // align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 
     i {
       color: #a5a5a5;

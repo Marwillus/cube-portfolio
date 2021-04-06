@@ -1,5 +1,5 @@
 var swiperV = new Swiper(".swiper-container-v", {
-  initialSlide: 0,
+  initialSlide: 1,
   direction: "vertical",
   mousewheel: true,
   nested: true,
