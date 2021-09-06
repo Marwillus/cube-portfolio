@@ -41,14 +41,14 @@ body {
   right: 0;
   width: 67%;
   // background-color: #feab1f;
-  background: linear-gradient(0deg, #b87b11 0%, #feab1f 20%);
+  background: linear-gradient(0deg, #2f2004 0%, #d48f18 20%);
 }
 
 /////////////// cube stuff
 #cube {
   position: absolute;
-  top: 48%;
-  left: 55%;
+  top: 50%;
+  left: 58%;
   transform: translate(-50%, -50%);
   width: $cubeWidth;
   height: $cubeHeight;
@@ -91,6 +91,11 @@ body {
   margin-bottom: 2rem;
 }
 
+.swiper-pagination-vertical.swiper-pagination-bullets,.swiper-vertical > .swiper-pagination-bullets{
+  left: 40px;
+  width: fit-content;
+}
+
 .swiper-pagination-bullet:focus,
 .swiper-pagination-bullet:active {
   outline: none;
@@ -124,8 +129,6 @@ body {
 }
 .bg-color {
   background-color: #f3a41d;
-
-  background-image: url("/images/black-paper.png");
 }
 
 .swiper-button-next,

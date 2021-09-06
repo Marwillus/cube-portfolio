@@ -40,14 +40,14 @@ body {
 #bg-right {
   right: 0;
   width: 67%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#b87b11), color-stop(20%, #feab1f));
-  background: linear-gradient(0deg, #b87b11 0%, #feab1f 20%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#2f2004), color-stop(20%, #d48f18));
+  background: linear-gradient(0deg, #2f2004 0%, #d48f18 20%);
 }
 
 #cube {
   position: absolute;
-  top: 48%;
-  left: 55%;
+  top: 50%;
+  left: 58%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 1300px;
@@ -89,6 +89,13 @@ body {
   background: none;
   border-radius: 10px;
   margin-bottom: 2rem;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical > .swiper-pagination-bullets {
+  left: 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .swiper-pagination-bullet:focus,
@@ -135,7 +142,6 @@ body {
 
 .bg-color {
   background-color: #f3a41d;
-  background-image: url("/images/black-paper.png");
 }
 
 .swiper-button-next,
