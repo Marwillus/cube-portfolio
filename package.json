@@ -9,6 +9,8 @@
   },
   "devDependencies": {},
   "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded styles/style.scss:styles/style.css",
+    "sass-prod": "sass --no-source-map --style=compressed styles/style.scss:styles/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

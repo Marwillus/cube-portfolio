@@ -1,348 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="./images/favicon-32x32.png"
-      sizes="32x32"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
 
-    <link rel="stylesheet" href="./styles/style.css" />
-    <title>This is Mawillus</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <body>
-    <!-- background -->
-    <div id="bg-left"></div>
-    <div id="bg-right"></div>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>This is Mawillus</title>
+</head>
 
-    <!-- menu -->
-    <div class="swiper-pagination"></div>
+<body>
+  <!-- background -->
+  <div id="bg-left"></div>
+  <div id="bg-right"></div>
 
-    <!-- Swiper -->
-    <div class="swiper-container swiper-container-v" id="cube">
-      <div class="swiper-wrapper">
-        <!-- intro -->
-        <div class="swiper-slide bg-outside bg-color bg-color" data-name="Home">
-          <div class="bg-inside">
-            <img
-              src="./images/12092_mawillus_logo_KJ-01.png"
-              alt="logo"
-              class="logo"
-            />
-          </div>
+  <!-- menu -->
+  <div class="swiper-pagination"></div>
+
+  <!-- Swiper -->
+  <div class="swiper-container swiper-container-v" id="cube">
+    <div class="swiper-wrapper">
+      <!-- intro -->
+      <div class="swiper-slide bg-outside bg-color bg-color" data-name="Home">
+        <div class="bg-inside">
+          <img src="./images/12092_mawillus_logo_KJ-01.png" alt="logo" class="logo" />
         </div>
+      </div>
 
-        <!-- About -->
-        <div class="swiper-slide bg-outside bg-color" data-name="About">
-          <div class="bg-inside">
-            <div class="about-wrapper">
-              <img src="./images/thisIsMe.png" alt="thats marcus" />
-              <div class="about-info">
-                <h2>Hello there, I'm</h2>
-                <h1>Marcus Will</h1>
-                <p>
-                  I've always been fascinated by how things work and how to
-                  build or repair them. Thanks to my many years of experience as
-                  an industrial mechanic, carpenter, event technician and
-                  programmer, I am now able to turn almost every crazy idea into
-                  reality. So if you want something unusual to be built, feel
-                  free to contact me.
-                </p>
-              </div>
+      <!-- About -->
+      <div class="swiper-slide bg-outside bg-color" data-name="About">
+        <div class="bg-inside">
+          <div class="about-wrapper">
+            <img src="./images/me.png" loading="lazy" alt="thats marcus" />
+            <div class="about-info">
+              <h2>Hello there, I'm</h2>
+              <h1>Marcus Will</h1>
+              <p>
+                I've always been fascinated by how things work and how to
+                build or repair them. Thanks to my many years of experience as
+                an industrial mechanic, carpenter, event technician and
+                programmer, I am now able to turn almost every crazy idea into
+                reality. So if you want something unusual to be built, feel
+                free to contact me.
+              </p>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- projects -->
-        <div class="swiper-slide" data-name="Projects">
-          <div class="swiper-container swiper-container-h bg-outside">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide bg-color">
-                <div class="bg-inside">
-                  <div class="website-info">
-                    <h1>this.</h1>
+      <!-- projects -->
+      <div class="swiper-slide" data-name="Projects">
+        <div class="swiper-container swiper-container-h bg-outside">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-color">
+              <div class="bg-inside">
+                <div class="website-info">
+                  <h1>this.</h1>
+                  <p>
+                    I built this site to practice my web development and
+                    -design skills, but don't get fooled by the poor coding, I did this long ago
+                    after I finished my bootcamp
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide bg-color">
+              <div class="bg-inside">
+                <div class="grid-wrapper">
+                  <div class="main-grid">
+                    <img src="https://iili.io/JnHQ2Zx.md.jpg" loading="lazy" alt="" />
+                  </div>
+                  <div class="second-grid">
+                    <img src="./images/leuchte2.gif" loading="lazy" alt="" />
+                  </div>
+                  <div class="third-grid">
+                    <div class="info">
+                      <h5>Ambilight</h5>
+                      <p>
+                        A desk lamp in a modern design with 4 different
+                        ambient modes: Bouncing balls, fire, color changes and
+                        sound react.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide bg-color">
+              <div class="bg-inside">
+                <div class="grid-wrapper">
+                  <div class="main-grid">
+                    <img src="https://iili.io/JnHQJTb.md.jpg" loading="lazy" alt="" />
+                  </div>
+                  <div class="second-grid">
+                    <div class="info">
+                      <h5>Daft Cyberpunk</h5>
+                      <p>
+                        Based on the design of Guy-Manuel's legendary helmet,
+                        this version can track the wearer's eyes and voice and
+                        project them onto the helmet. Has different LED modes
+                        and is coated with real rust
+                      </p>
+                    </div>
+                  </div>
+                  <div class="third-grid">
+                    <img src="./images/helm_gif.gif" loading="lazy" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide bg-color">
+              <div class="bg-inside">
+                <div class="project-intro">
+                  <div class="project-intro-info">
                     <p>
-                      I built this site to practice my web development and
-                      -design skills
+                      Here I show some of my projects that I built in my spare
+                      time. Everything is completely planned, designed and
+                      built solely by me.
+                    </p>
+                    <br>
+                    <p class="underline-arrow underline-arrow--left">
+                      swipe left for stuff where coding is involved
+                    </p>
+                    <p class="underline-arrow underline-arrow--right">
+                      swipe right for things I build without coding
                     </p>
                   </div>
+                  <div class="project-intro-pic"></div>
                 </div>
               </div>
+            </div>
 
-              <div class="swiper-slide bg-color">
-                <div class="bg-inside">
-                  <div class="grid-wrapper">
-                    <div class="main-grid">
-                      <img src="./images/projects/leuchte1.jpg" alt="" />
-                    </div>
-                    <div class="second-grid">
-                      <img src="./images/projects/leuchte2.gif" alt="" />
-                    </div>
-                    <div class="third-grid">
-                      <div class="info">
-                        <h5>Ambilight</h5>
-                        <p>
-                          A desk lamp in a modern design with 4 different
-                          ambient modes: Bouncing balls, fire, color changes and
-                          sound react.
-                        </p>
-                      </div>
-                    </div>
+            <div class="swiper-slide bg-color">
+              <div class="bg-inside">
+                <div class="grid-wrapper">
+                  <div class="main-grid">
+                    <img src="https://iili.io/JnJdjyl.md.jpg" loading="lazy" alt="" />
                   </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide bg-color">
-                <div class="bg-inside">
-                  <div class="grid-wrapper">
-                    <div class="main-grid">
-                      <img src="./images/projects/helm.jpg" alt="" />
-                    </div>
-                    <div class="second-grid">
-                      <div class="info">
-                        <h5>Daft Cyberpunk</h5>
-                        <p>
-                          Based on the design of Guy-Manuel's legendary helmet,
-                          this version can track the wearer's eyes and voice and
-                          project them onto the helmet. Has different LED modes
-                          and is coated with real rust
-                        </p>
-                      </div>
-                    </div>
-                    <div class="third-grid">
-                      <img src="./images/projects/helm_gif.gif" alt="" />
-                    </div>
+                  <div class="second-grid">
+                    <img src="https://iili.io/JnJdK2j.md.jpg" loading="lazy" alt="" />
                   </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide bg-color">
-                <div class="bg-inside">
-                  <div class="project-intro">
-                    <div class="project-intro-info">
+                  <div class="third-grid">
+                    <div class="info">
+                      <h5>sound Wall-E</h5>
                       <p>
-                        Here I show some of my projects that I built in my spare
-                        time. Everything is completely planned, designed and
-                        built solely by me.
+                        Inspired by the UK soundsystems, I created this
+                        transportable system with several speakers. It can be
+                        transformed into several versions and a bicycle
+                        trailer in a few simple steps. You can also hang a DJ
+                        controller and laptop on the handlebars when it's
+                        assembled.
                       </p>
-                      <p>
-                        <i class="fa fa-arrow-left" aria-hidden="true"></i> go
-                        left for stuff where coding is involved
-                      </p>
-                      <p>
-                        go right for the good-old analog stuff
-                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                      </p>
-                    </div>
-                    <div class="project-intro-pic"></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide bg-color">
-                <div class="bg-inside">
-                  <div class="grid-wrapper">
-                    <div class="main-grid">
-                      <img src="./images/projects/soundsystem1.jpg" alt="" />
-                    </div>
-                    <div class="second-grid">
-                      <img src="./images/projects/soundsystem2.jpg" alt="" />
-                    </div>
-                    <div class="third-grid">
-                      <div class="info">
-                        <h5>sound Wall-E</h5>
-                        <p>
-                          Inspired by the UK soundsystems, I created this
-                          transportable system with several speakers. It can be
-                          transformed into several versions and a bicycle
-                          trailer in a few simple steps. You can also hang a DJ
-                          controller and laptop on the handlebars when it's
-                          assembled.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide bg-color">
-                <div class="bg-inside moebel-2">
-                  <div class="grid-wrapper">
-                    <div class="main-grid">
-                      <img src="./images/projects/sitzecke1.jpg" alt="" />
-                    </div>
-                    <div class="second-grid">
-                      <div class="info">
-                        <h5>chill dome</h5>
-                        <p>
-                          A relaxation area of ​​more than 3x3m, lined with
-                          plants. A bookcase is set in one of the inner arms,
-                          and everything has clever arranged indirect light.
-                          Ideal for social gatherings with many people.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="third-grid">
-                      <img src="./images/projects/sitzecke2.jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide bg-color">
-                <div class="bg-inside moebel-3">
-                  <div class="grid-wrapper">
-                    <div class="main-grid">
-                      <img src="./images/projects/lowboard1.jpg" alt="" />
-                    </div>
-                    <div class="second-grid">
-                      <img src="./images/projects/lowboard2.jpg" alt="" />
-                    </div>
-                    <div class="third-grid">
-                      <div class="info">
-                        <h5>lowboard</h5>
-                        <p>
-                          A mobile lowboard that can be aligned in various
-                          directions as required. Has an elegant floating
-                          design, a cleverly integrated cable management and the
-                          tv is height adjustable.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide bg-color">
-                <div class="bg-inside moebel-3">
-                  <div class="grid-wrapper">
-                    <div class="main-grid">
-                      <img src="./images/projects/schrank1.jpg" alt="" />
-                    </div>
-                    <div class="second-grid">
-                      <img src="./images/projects/schrank2.jpg" alt="" />
-                    </div>
-                    <div class="third-grid">
-                      <div class="info">
-                        <h5>sliding door cabinet</h5>
-                        <p>
-                          This cabinet aims to appear modern, simple but
-                          timeless at once. It offers a lot of storage space and
-                          blends in perfectly with the curved lines of the room.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide bg-color">
-                <div class="bg-inside moebel-3">
-                  <div class="grid-wrapper">
-                    <div class="main-grid">
-                      <img src="./images/projects/bett1.jpg" alt="" />
-                    </div>
-                    <div class="second-grid">
-                      <img src="./images/projects/bett2.jpg" alt="" />
-                    </div>
-                    <div class="third-grid">
-                      <div class="info">
-                        <h5>bedroom</h5>
-                        <p>
-                          The bed is built around the column, framed by a
-                          gray-stained wooden decoration in which green lilies
-                          provide good air quality and a touch-sensitive copper
-                          lamp. There is storage space for bedding in the
-                          headboard.
-                        </p>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-        </div>
 
-        <!-- contact -->
-        <div class="swiper-slide bg-outside bg-color" data-name="Contact">
-          <div class="bg-inside">
-            <div class="form-wrapper">
-              <form
-                class="form-over"
-                action="https://formspree.io/f/meqpvbay"
-                method="POST"
-              >
-                <label for="message">Dear Marcus,</label>
-                <textarea
-                  name="message"
-                  id="input-message"
-                  placeholder="enter your message here"
-                  resize="none"
-                  rows="12"
-                ></textarea>
-                <input
-                  type="text"
-                  name="name"
-                  id="input-name"
-                  placeholder="name"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  id="input-email"
-                  placeholder="email"
-                />
-                <input type="submit" value="send" id="send-btn" />
-              </form>
-              <div class="form-under">
-                <h2>send me a message</h2>
+            <div class="swiper-slide bg-color">
+              <div class="bg-inside moebel-2">
+                <div class="grid-wrapper">
+                  <div class="main-grid">
+                    <img src="https://iili.io/JnHysqb.md.jpg" loading="lazy" alt="" />
+                  </div>
+                  <div class="second-grid">
+                    <div class="info">
+                      <h5>chill dome</h5>
+                      <p>
+                        A relaxation area of ​​more than 3x3m, lined with
+                        plants. A bookcase is set in one of the inner arms,
+                        and everything has clever arranged indirect light.
+                        Ideal for social gatherings with many people.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="third-grid">
+                    <img src="https://iili.io/JnJ9GEb.md.jpg" loading="lazy" alt="" />
+                  </div>
+                </div>
               </div>
+            </div>
+
+            <div class="swiper-slide bg-color">
+              <div class="bg-inside moebel-3">
+                <div class="grid-wrapper">
+                  <div class="main-grid">
+                    <img src="https://iili.io/JnHQNS9.md.jpg" loading="lazy" alt="" />
+                  </div>
+                  <div class="second-grid">
+                    <img src="https://iili.io/JnHZgbs.md.jpg" loading="lazy" alt="" />
+                  </div>
+                  <div class="third-grid">
+                    <div class="info">
+                      <h5>lowboard</h5>
+                      <p>
+                        A mobile lowboard that can be aligned in various
+                        directions as required. Has an elegant floating
+                        design, a cleverly integrated cable management and the
+                        tv is height adjustable.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide bg-color">
+              <div class="bg-inside moebel-3">
+                <div class="grid-wrapper">
+                  <div class="main-grid">
+                    <img src="https://iili.io/JnHDKG4.md.jpg" loading="lazy" alt="" />
+                  </div>
+                  <div class="second-grid">
+                    <img src="https://iili.io/JnHyFO7.md.jpg" loading="lazy" alt="" />
+                  </div>
+                  <div class="third-grid">
+                    <div class="info">
+                      <h5>sliding door cabinet</h5>
+                      <p>
+                        This cabinet aims to appear modern, simple but
+                        timeless at once. It offers a lot of storage space and
+                        blends in perfectly with the curved lines of the room.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide bg-color">
+              <div class="bg-inside moebel-3">
+                <div class="grid-wrapper">
+                  <div class="main-grid">
+                    <img src="https://iili.io/JnHQdjj.md.jpg" loading="lazy" alt="" />
+                  </div>
+                  <div class="second-grid">
+                    <img src="https://iili.io/JnHQ9yu.md.jpg" loading="lazy" alt="" />
+                  </div>
+                  <div class="third-grid">
+                    <div class="info">
+                      <h5>bedroom</h5>
+                      <p>
+                        The bed is built around the column, framed by a
+                        gray-stained wooden decoration in which green lilies
+                        provide good air quality and a touch-sensitive copper
+                        lamp. There is storage space for bedding in the
+                        headboard.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+
+      <!-- contact -->
+      <div class="swiper-slide bg-outside bg-color" data-name="Contact">
+        <div class="bg-inside">
+          <div class="form-wrapper">
+            <form class="form-over" action="https://formspree.io/f/meqpvbay" method="POST">
+              <label for="message">Dear Marcus,</label>
+              <textarea name="message" id="input-message" placeholder="enter your message here" resize="none"
+                rows="12"></textarea>
+              <input type="text" name="name" id="input-name" placeholder="name" />
+              <input type="email" name="email" id="input-email" placeholder="email" />
+              <input type="submit" value="send" id="send-btn" />
+            </form>
+            <div class="form-under">
+              <h2>send me a message</h2>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- social links -->
-    <div class="social-links">
-      <a href="https://github.com/Marwillus" target="_blank" rel="noreferrer">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/marcus-will-256789203/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <i class="fa fa-linkedin"></i>
-      </a>
-      <a href="https://codepen.io/marwillus" target="_blank" rel="noreferrer">
-        <i class="fa fa-codepen"></i>
-      </a>
-      <a
-        href="https://soundcloud.com/user-856030650-396764688"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <i class="fa fa-soundcloud"></i>
-      </a>
-    </div>
+  <!-- social links -->
+  <div class="social-links">
+    <a href="https://github.com/Marwillus" target="_blank" rel="noreferrer">
+      <i class="fa fa-github" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/marcus-will-256789203/" target="_blank" rel="noreferrer">
+      <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="https://codepen.io/marwillus" target="_blank" rel="noreferrer">
+      <i class="fa fa-codepen"></i>
+    </a>
+    <a href="https://soundcloud.com/user-856030650-396764688" target="_blank" rel="noreferrer">
+      <i class="fa fa-soundcloud"></i>
+    </a>
+  </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
