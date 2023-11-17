@@ -320,6 +320,21 @@ body {
   }
 }
 
+.split-screen {
+  display: flex;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: #f2f2f2;
+  }
+}
+
 ///////////////////form/////////////
 .form-wrapper {
   position: relative;

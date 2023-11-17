@@ -26,7 +26,7 @@ var swiperV = new Swiper(".swiper-container-v", {
 
 var swiperH = new Swiper(".swiper-container-h", {
   speed: 500,
-  initialSlide: 3,
+  initialSlide: 4,
   threshold: 3,
   effect: "cube",
   cubeEffect: {

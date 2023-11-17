@@ -274,6 +274,19 @@ body {
   padding: 40px;
 }
 
+.split-screen {
+  display: flex;
+}
+.split-screen > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.split-screen a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
 .form-wrapper {
   position: relative;
   width: 80%;
